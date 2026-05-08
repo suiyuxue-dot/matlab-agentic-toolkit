@@ -27,6 +27,29 @@ Before you begin, make sure you have:
 
 ---
 
+## Fast Path: MATLAB R2025a + VS Code
+
+If you already have MATLAB R2025a and use VS Code with Copilot, this is the shortest way to get started:
+
+1. Open the toolkit repository in VS Code.
+2. In Copilot Chat, run:
+   ```
+   Set up the MATLAB Agentic Toolkit
+   ```
+3. During setup, confirm:
+   - MATLAB root path (select MATLAB R2025a)
+   - Display mode (`desktop` or `nodesktop`)
+4. After setup completes, reload VS Code (**Developer: Reload Window**).
+5. In a new session, verify with:
+   - `What version of MATLAB is running?`
+   - `List the installed toolboxes.`
+
+If verification succeeds, you can immediately ask the agent to write MATLAB code, run tests, and review files.
+
+Prefer a manual project-level setup instead? Copy `templates/vscode-mcp.json` to `.vscode/mcp.json` in your project, then replace the placeholder MCP server path and `--matlab-root` path with your local MATLAB R2025a paths. See [Per-Project Configuration](#per-project-configuration) for details.
+
+---
+
 ## Full Setup
 
 Full setup clones the toolkit repository, then uses your agent to automate the entire configuration. This is the recommended path for first-time users.
@@ -347,4 +370,3 @@ MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See [mathwo
 Copyright 2026 The MathWorks, Inc.
 
 ----
-
